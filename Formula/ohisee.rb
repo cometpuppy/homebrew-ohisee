@@ -10,7 +10,7 @@ class Ohisee < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/cometpuppy/ohisee/releases/download/v0.9.0/ohisee_darwin_amd64.tar.gz"
-      sha256 "90bc3c561a98f9e1f1b608e616962efdfc7977369947693981482eb7d473c9ca"
+      sha256 "f870bc6fe346eb23ddd3550f43781fbf069d4fd3707b1da9fa00c369c32de873"
 
       define_method(:install) do
         bin.install "ohisee"
@@ -18,7 +18,7 @@ class Ohisee < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/cometpuppy/ohisee/releases/download/v0.9.0/ohisee_darwin_arm64.tar.gz"
-      sha256 "95ff500ea33917cefa63638ec37dd3e5c71544f236974fde0a38100499b7a73e"
+      sha256 "1cc2e003f3637d69475af3848f14fa8d08216d896c6519df05cf8864200dde1b"
 
       define_method(:install) do
         bin.install "ohisee"
@@ -29,14 +29,14 @@ class Ohisee < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/cometpuppy/ohisee/releases/download/v0.9.0/ohisee_linux_amd64.tar.gz"
-      sha256 "ff16d80fcf71a098917599091c9c1258d301d69e73244f7c58d26ecf8bd8045b"
+      sha256 "31a6a60123a54e85a274ee1962ef4c66c6a740779ea99fcb3fceb7b8f8754aaa"
       define_method(:install) do
         bin.install "ohisee"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/cometpuppy/ohisee/releases/download/v0.9.0/ohisee_linux_arm64.tar.gz"
-      sha256 "674b948c44562408804766627e7869a4824ec8733d8683a7c10cd8e977cec6b6"
+      sha256 "e3422c8080674e2014cda2e84a40b8f0323b9e2b8d8422bfc1787e3aae930765"
       define_method(:install) do
         bin.install "ohisee"
       end
