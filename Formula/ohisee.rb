@@ -7,9 +7,6 @@ class Ohisee < Formula
   homepage "https://github.com/cometpuppy/ohisee"
   version "0.9.0"
 
-  # ermgamba skip private repo checks
-  pour_bottle? only_if: :default_formulae
-
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/cometpuppy/ohisee/releases/download/v0.9.0/ohisee_darwin_amd64.tar.gz"
